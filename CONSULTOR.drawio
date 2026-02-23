@@ -1,0 +1,178 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.2">
+  <diagram name="Página-1" id="_csbAQtdPF3Lo2eBc6Fd">
+    <mxGraphModel dx="1113" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_urg" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="SERVICIO DE URGENCIAS" vertex="1">
+          <mxGeometry height="600" width="330" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="A01" parent="lane_urg" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="MÉDICO SERVICIO DE URGENCIAS/ RESIDENTE" vertex="1">
+          <mxGeometry height="50" width="250" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="A02" parent="lane_urg" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="MÉDICO URGENCIAS" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="A03" parent="lane_urg" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F4C81;fillColor=#1976D2;fontColor=#FFFFFF;fontStyle=1;" value="SOLICITUD CONSULTOR&#xa;LLAMADO" vertex="1">
+          <mxGeometry height="40" width="160" x="85" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="N01" parent="lane_urg" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C0C0C0;fillColor=#F5F5F5;align=left;verticalAlign=top;spacing=8;" value="Médico urgencias:&lt;br&gt;- Comunicación Telefónica con Consultor de llamado&lt;br&gt;- Solicitud de Consultor llamado:&lt;br&gt;&amp;nbsp;&amp;nbsp;- Incluir nombre de Médico&lt;br&gt;&amp;nbsp;&amp;nbsp;- Incluir Hora de llamado telefónico." vertex="1">
+          <mxGeometry height="250" width="110" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_esp" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="EVALUACIÓN ESPECIALISTA" vertex="1">
+          <mxGeometry height="600" width="330" x="330" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="B01" parent="lane_esp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="CONSULTOR DE LLAMADO" vertex="1">
+          <mxGeometry height="30" width="190" x="70" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B03" parent="lane_esp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="RELOJ CONTROL" vertex="1">
+          <mxGeometry height="30" width="160" x="85" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="B04" parent="lane_esp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="EVALUACIÓN CLÍNICA" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="B05" parent="lane_esp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;align=left;spacing=8;" value="Contestar Interconsulta&lt;br&gt;• Estado Ejecutado.&lt;br&gt;• Evolución a Paciente" vertex="1">
+          <mxGeometry height="80" width="250" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="B06" parent="lane_esp" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="REGISTRO CLÍNICO" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="lane_esp" source="B01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="B03" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="129.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nIrduTnmHfRE0UiFumPW-1" connectable="0" parent="e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;ASISTE A HOSPITAL&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1163" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane_cc" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="CONTRALOR CLÍNICO" vertex="1">
+          <mxGeometry height="600" width="330" x="690" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="C01" parent="lane_cc" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="MÉDICO JEFE&#xa;UNIDAD" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="C02" parent="lane_cc" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="ESPECIALISTA&#xa;REFERENTE" vertex="1">
+          <mxGeometry height="35" width="120" x="190" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="C03" parent="lane_cc" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="ANÁLISIS CASO CLÍNICO" vertex="1">
+          <mxGeometry height="20" width="200" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="C04" parent="lane_cc" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="SOLICITUD CONSULTOR&#xa;LLAMADO" vertex="1">
+          <mxGeometry height="50" width="200" x="80" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_ch" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="CONTRALOR HORARIO" vertex="1">
+          <mxGeometry height="600" width="330" x="1030" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="D01" parent="lane_ch" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="CONTRALOR HORARIO" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="D03" parent="lane_ch" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="SOLICITUD CONSULTOR&#xa;LLAMADO" vertex="1">
+          <mxGeometry height="50" width="250" x="45" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_ce" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="CONTRALOR ESTADÍSTICA" vertex="1">
+          <mxGeometry height="600" width="330" x="1370" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="E01" parent="lane_ce" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="CONTRALOR ESTADÍSTICA" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E02" parent="lane_ce" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="SOLICITUD CONSULTOR&#xa;LLAMADO" vertex="1">
+          <mxGeometry height="50" width="250" x="50" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_fin" parent="1" style="swimlane;horizontal=0;startSize=30;whiteSpace=wrap;html=1;strokeColor=#D0D0D0;fillColor=#FFFFFF;" value="FINANZAS" vertex="1">
+          <mxGeometry height="600" width="330" x="1710" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="F03" parent="lane_fin" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="CONTRALOR&#xa;REFERENTE" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="F02" parent="lane_fin" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="CONTRALOR&#xa;FINANZAS" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="F01" parent="lane_fin" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#777777;fillColor=#FFFFFF;" value="SOLICITUD CONSULTOR&#xa;LLAMADO" vertex="1">
+          <mxGeometry height="50" width="250" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="A01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="B01" value="Llamado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="515" y="45" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="B01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="A02" value="Confirmación">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="A02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="A03" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="B03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="B04" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="B04" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="B05" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="B05" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="B06" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="C01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="C03" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="C02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="C03" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="C03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="C04" value="NOTA A LA ORDEN">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="480" />
+              <mxPoint x="870" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="D01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="D03" value="CONTRASTAR&#xa;HORARIO">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="E01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="E02" value="CONTRASTAR&#xa;CÓDIGOS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="F01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="F02" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="F02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="F03" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="A03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="C04" value="ENVÍO A LOCAL DE CONSULTOR DE LLAMADO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="590" />
+              <mxPoint x="875" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="C04" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="D03" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="875" y="590" />
+              <mxPoint x="1195" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="D03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="E02" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1195" y="590" />
+              <mxPoint x="1535" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="E02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="F01" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="590" />
+              <mxPoint x="1875" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

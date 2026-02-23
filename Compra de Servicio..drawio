@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram name="Página-1" id="SFjz1qzHWfgpR35EHWJn">
+    <mxGraphModel dx="570" dy="1582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_sospecha" parent="1" style="shape=swimlane;horizontal=0;startSize=40;fillColor=none;strokeColor=#000000;fontStyle=1;" value="SOSPECHA" vertex="1">
+          <mxGeometry height="250" width="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="start_ingreso" parent="lane_sospecha" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#00A000;strokeWidth=3;fillColor=#FFFFFF;" value="Ingreso espontáneo o por derivación" vertex="1">
+          <mxGeometry height="50" width="50" x="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_sospecha" parent="lane_sospecha" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" value="¿Existe sospecha Ca?" vertex="1">
+          <mxGeometry height="60" width="70" x="250" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="end_evaluado" parent="lane_sospecha" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#C00000;strokeWidth=3;fillColor=#FFFFFF;" value="Paciente evaluado" vertex="1">
+          <mxGeometry height="50" width="50" x="250" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_diagnostico" parent="1" style="shape=swimlane;horizontal=0;startSize=40;fillColor=none;strokeColor=#000000;fontStyle=1;" value="DIAGNÓSTICO" vertex="1">
+          <mxGeometry height="650" width="1550" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eval_diag" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Evaluación" vertex="1">
+          <mxGeometry height="60" width="160" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="examenes_diag" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Realización de exámenes" vertex="1">
+          <mxGeometry height="60" width="200" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_examenes" parent="lane_diagnostico" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" value="¿Exámenes disponibles?" vertex="1">
+          <mxGeometry height="70" width="90" x="560" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="biopsia" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Biopsia" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="imagenologia" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Laboratorio / Imagenología (TAC - ECO - Rx)" vertex="1">
+          <mxGeometry height="60" width="260" x="670" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_confirma" parent="lane_diagnostico" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" value="¿Se confirma diagnóstico?" vertex="1">
+          <mxGeometry height="80" width="110" x="320" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="negativo" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Sospecha clínica alta con resultado negativo" vertex="1">
+          <mxGeometry height="70" width="210" x="80" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="especialista" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Médico especialista" vertex="1">
+          <mxGeometry height="60" width="160" x="320" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="etapificacion" parent="lane_diagnostico" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Etapificación" vertex="1">
+          <mxGeometry height="60" width="160" x="320" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_tratamiento" parent="1" style="shape=swimlane;horizontal=0;startSize=40;fillColor=none;strokeColor=#000000;fontStyle=1;" value="TRATAMIENTO" vertex="1">
+          <mxGeometry height="450" width="1550" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="comite" parent="lane_tratamiento" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Evaluación comité quirúrgico" vertex="1">
+          <mxGeometry height="60" width="240" x="320" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_tratamiento" parent="lane_tratamiento" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#000000;" value="¿Tiene opción de tratamiento?" vertex="1">
+          <mxGeometry height="80" width="110" x="620" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="paliativos" parent="lane_tratamiento" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Alivio del dolor y cuidados paliativos" vertex="1">
+          <mxGeometry height="60" width="260" x="620" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tratamiento" parent="lane_tratamiento" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Tratamiento (Radioterapia / Quirúrgico / Farmacológico)" vertex="1">
+          <mxGeometry height="70" width="360" x="880" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_seguimiento" parent="1" style="shape=swimlane;horizontal=0;startSize=40;fillColor=none;strokeColor=#000000;fontStyle=1;" value="SEGUIMIENTO" vertex="1">
+          <mxGeometry height="300" width="1550" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="seguimiento" parent="lane_seguimiento" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Tratamiento y seguimiento" vertex="1">
+          <mxGeometry height="60" width="260" x="500" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="equipo" parent="lane_seguimiento" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#1E90FF;strokeWidth=2;" value="Tratamiento con equipo multidisciplinario" vertex="1">
+          <mxGeometry height="60" width="320" x="820" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end_final" parent="lane_seguimiento" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#C00000;strokeWidth=3;fillColor=#FFFFFF;" value="Alta o fallecimiento" vertex="1">
+          <mxGeometry height="60" width="60" x="610" y="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
